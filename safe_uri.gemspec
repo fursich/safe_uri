@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = SafeURI::VERSION
   spec.authors       = ["Koji Onishi"]
   spec.email         = ["fursich0@gmail.com"]
-  spec.required_ruby_version = '>= 2.4.0'
+  spec.required_ruby_version = '>= 2.3.0'
 
   spec.summary       = %q{a simple, safe alternative for URI.#open and Kernel.#open. With SafeURI.open you are not affected by pipe character injection that potentailly leads to various vulnerabilities.}
   spec.description   = %q{SafeURI is an alternative implementation that allows you to open an URI with safer approach - with SafeURI.#open, you can always force to use URI.parse(url).open, or File.open(filename) depending on the provided argument. The pipe character '|' is NOT accepted as it does not delegate to Kernel.#open (falls back to File.#open), unlike URI.#open that falls back to Kernel.#open when un-openable arguments are given.}
