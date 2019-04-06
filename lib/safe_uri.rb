@@ -1,6 +1,9 @@
-require "safe_uri/version"
+require 'open-uri'
+require 'addressable/uri'
 
-module SafeUri
-  class Error < StandardError; end
-  # Your code goes here...
+require 'safe_uri/version'
+require 'safe_uri/exceptions'
+require 'safe_uri/open-uri'
+
+module SafeURI
 end
